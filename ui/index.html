@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ComfyUI Demo</title>
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>ComfyUI Image Generator</h1>
+
+        <form id="prompt-form">
+            <label for="prompt-input">Enter your prompt</label>
+            <textarea id="prompt-input" name="prompt" rows="4" placeholder="A photorealistic portrait of a golden retriever in a field at sunset" required></textarea>
+            <div class="actions">
+                <button id="submit-btn" type="submit">Generate</button>
+                <span id="status-text" class="status"></span>
+            </div>
+        </form>
+
+        <div id="result" class="result hidden">
+            <h2>Result</h2>
+            <div class="image-wrap">
+                <img id="result-image" alt="Generated image will appear here" />
+            </div>
+            <div class="meta">
+                <div><strong>Prompt ID:</strong> <span id="prompt-id"></span></div>
+                <div><strong>Filename:</strong> <span id="filename"></span></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+    <noscript>Please enable JavaScript to use this demo.</noscript>
+    
+</body>
+</html>
+
+
